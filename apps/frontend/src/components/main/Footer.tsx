@@ -1,5 +1,8 @@
+interface FooterProps {}
+
 import { Link } from "react-router-dom"
 interface FooterProps { }
+
 
 const Footer: React.FC<FooterProps> = () => {
   return (
@@ -12,36 +15,36 @@ const Footer: React.FC<FooterProps> = () => {
           </div>
           <div className="p-5">
             <div className="text-sm uppercase text-rose-400 font-bold">Download</div>
-            <a className="my-3 block" href="/#">
+            <Link className="my-3 block hover:text-cyan-400" to="/#">
               Documentation
-            </a>
-            <a className="my-3 block" href="/#">
+            </Link>
+            <Link className="my-3 block hover:text-cyan-400" to="/#">
               Tutorials
-            </a>
-            <a className="my-3 block" href="/#">
+            </Link>
+            <Link className="my-3 block hover:text-cyan-400" to="/#">
               Support
-            </a>
+            </Link>
           </div>
           <div className="p-5">
             <div className="text-sm uppercase text-rose-400 font-bold">Support</div>
-            <a className="my-3 block" href="/#">
+            <Link className="my-3 block hover:text-cyan-400" to="/#">
               Help Center
-            </a>
-            <a className="my-3 block" href="/#">
+            </Link>
+            <Link className="my-3 block hover:text-cyan-400" to="/#">
               Privacy Policy
-            </a>
-            <a className="my-3 block" href="/#">
+            </Link>
+            <Link className="my-3 block hover:text-cyan-400" to="/#">
               Conditions
-            </a>
+            </Link>
           </div>
           <div className="p-5">
             <div className="text-sm uppercase text-rose-400 font-bold">Contact us</div>
-            <a className="my-3 block" href="/#">
-              Bug_Busters Tech, Burdwan, West Bengal-713104
-            </a>
-            <a className="my-3 block" href="/#">
-              contact@company.com <span className="text-teal-600 text-xs p-1">New</span>
-            </a>
+            <Link className="my-3 block" to="/#">
+              Bug_Busters , Burdwan, West Bengal-713104
+            </Link>
+            <Link className="my-3 block" to="/#">
+              officialfuddie@gmail.com
+            </Link>
           </div>
         </div>
 
@@ -50,9 +53,6 @@ const Footer: React.FC<FooterProps> = () => {
             <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" alt="Facebook" />
           </Link>
 
-          {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-          <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png" alt="LinkedIn" />
-        </a> */}
           <Link to={'https://facebook.com'}>
             <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png" alt="LinkedIn" /></Link>
 
@@ -70,8 +70,9 @@ const Footer: React.FC<FooterProps> = () => {
           </Link>
         </div>
 
-        <p className="text-center text-gray-700 font-medium">&copy; 2024 Fuddie Ltd || All rights reserved.</p>
+        <p className="text-center text-gray-700 font-medium">&copy; 2024 Bug_Busters Ltd , All rights reserved.</p>
       </footer>
+
 
     </main>
   );
